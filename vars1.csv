@@ -1,0 +1,17 @@
+Name;PLC;Memory;Element;Description
+nivel;plc1;register;0;Nivel
+boya_minimo;plc1;input;1;Nivel mínimo
+boya_maximo;plc1;input;3;Nivel máximo
+valvula_abierta;plc1;input;4;Válvula abierta
+valvula_cerrada;plc1;input;5;Válvula cerrada
+consigna_nivel;plc1;holding;2;Consigna de nivel
+valvula_abrir;plc1;coil;0;Abrir válvula
+valvula_cerrar;plc1;coil;1;Cerrar válvula
+opcbool;plc2;;2:Data\2:Static\2:Scalar\2:BooleanValue;
+opcint;plc2;;2:Data\2:Static\2:Scalar\2:Int32Value;
+opcfloat;plc2;;2:Data\2:Static\2:Scalar\2:FloatValue;
+opcstring;plc2;;2:Data\2:Static\2:Scalar\2:StringValue;
+opcdatetime;plc2;;2:Data\2:Static\2:Scalar\2:DateTimeValue;
+B01_I1;plc3;B01;B01_I1;Intensidad 1
+B01_I2;plc3;B01;B01_I2;Intensidad 2
+B01_I3;plc3;B01;B01_I3;Intensidad 3

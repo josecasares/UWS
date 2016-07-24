@@ -1,0 +1,98 @@
+span[data-dir], input[type=text] {
+		width: 50px;
+		text-align:right;
+		display:inline-block;
+}
+
+.alarms {
+	width: 100%;
+	max-height:200px;
+	padding: 0px;
+	margin: 0px;
+	border: 1px solid #666;
+	background: #FFF;
+	position: fixed;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+.alarms tr {
+	border: 1px solid #AAA;
+}
+
+.alarms td:nth-child(1) {
+	width: 150px;
+}
+
+.alarms td:nth-child(2) {
+	width: 75px;
+}
+
+.alarm-active {
+   animation-duration: 400ms;
+   animation-name: alarm;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+
+@keyframes alarm {
+   from {
+      background-color: #F00;
+   }
+   to {
+      background-color: #FF0;
+   }
+ }
+ 
+.alarm-past {
+	background-color:#0A0;
+}
+
+.alarm-inactive {
+	background-color:#666;
+}
+
+.content {
+	padding: 5px;
+	margin: 5px;
+	position: fixed;
+	background-color: #EEF;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+ .fondo {
+	 position: fixed;
+	 z-index: -1;
+ }
+ 
+ .title {
+	 width:100%;
+	 background-color: #FFE;
+	 padding:15px;
+	 font-family: Arial;
+	 font-weight: bold;
+	 font-size: 30px;
+	 font-variant: small-caps;
+ }
+ 
+ .level-out {
+ 	padding: 1px;
+	position: fixed;
+	background-color: #FFF;
+	font-family: Arial;
+	font-weight: bold;
+ 	width:7px;
+ 	border:1px solid #000;
+ }
+ 
+ .level-in {
+ 	background-color:#00F;
+ 	width:7px;
+ 	position:absolute;
+ 	bottom:1px
+ }
+ 
+ [data-trend] {
+	 background-color: #EEE;
+ }

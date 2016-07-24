@@ -1,0 +1,29 @@
+<html>
+<head>
+<script src="uws/jquery.js"></script>
+<script src="uws/j.js"></script>
+</head>
+<body>
+<div class="fondo"><img src="deposito.png"/></div>
+<div>
+<div class="title">Control de nivel con UWS</div> 
+<button onClick="window.open('opc.html');">OPC</button>
+<div class="content" style="left:350px;top:320px">Nivel:<span data-dir="nivel">0</span>%</div>
+<div class="level-out" style="left:300;top:250;height:300">
+<div class="level-in" data-dir="nivel" data-css="height" data-transform="scale:0,100,0,300"></div></div>
+<div class="content" style="left:350px;top:355px">Consigna:<input type="text" data-dir="consigna_nivel"/>%</div>
+<div class="content" style="left:580px;top:345px" data-dir="boya_maximo">NIVEL ALTO</div>
+<div class="content" style="left:580px;top:565px" data-dir="boya_minimo">NIVEL BAJO</div>
+<div class="content" style="left:950px;top:500px" data-dir="valvula_abierta">ABIERTA</div>
+<div class="content" style="left:950px;top:530px" data-dir="valvula_cerrada">CERRADA</div>
+<div class="content" style="left:1050px;top:500px"><input type="checkbox" data-dir="valvula_abrir"/>ABRIR</div>
+<div class="content" style="left:1050px;top:530px"><input type="checkbox" data-dir="valvula_cerrar"/>CERRAR</div>
+<table class="alarms" style="left:0px;top:700px" data-alarmgroup="alarms1">
+	<thead><tr><td>Tiempo</td><td>Estado</td><td>Alarma</td></tr></thead><tbody></tbody>
+</table>
+<table class="alarms" style="left:1000px;top:75px" data-alarmgroup="alarms1" data-maxalarms="8" data-historical>
+	<thead><tr><td>Tiempo</td><td>Estado</td><td>Alarma</td></tr></thead><tbody></tbody>
+</table>
+</div>
+</body>
+</html>

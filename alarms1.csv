@@ -1,0 +1,5 @@
+Name;Definition;Description
+Alarm_1;nivel>90;{0.key} muy alto: {0.value}
+Alarm_2;boya_maximo;{0.description}
+Alarm_3;1-boya_minimo;{0.description}
+Alarm_4;valvula_abierta*valvula_cerrada;{0.description} y {1.description}
