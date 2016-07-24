@@ -14,7 +14,7 @@ $(document).ready(function(){
 
 	/* Abre socket de comunicación con servidor */
 	host=window.location.host.split(":")[0];
-	port=8083;
+	port=8081;
 	socket = new WebSocket("ws://"+host+":"+port);
 	socket.onopen = function(){
 		register();
