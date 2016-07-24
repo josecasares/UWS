@@ -188,9 +188,6 @@ class UWServer(object):
         self.ws_port=ws_port
         self.relative_path=relative_path
 
-        if len(self.ensemble.plc)>1 and False:
-            raise NameError("Free version is limited to one PLC")
-
         http_thread=Thread(target=self.http_server, args=())
         http_thread.start()
 
