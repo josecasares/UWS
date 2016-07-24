@@ -1,2 +1,2 @@
 # UWS
-Universal Web SCADA
+Universal Web SCADA written in Python.
