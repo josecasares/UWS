@@ -62,7 +62,7 @@ class PLC(object):
             
             '''
             
-            def __init__(self, memory:PLC.Memory, key:str, description:str="", address=None):
+            def __init__(self, memory:PLC.Memory=None, key:str=None, description:str="", address=None):
                 self.memory=memory
                 self.key=key
                 self.address=address
